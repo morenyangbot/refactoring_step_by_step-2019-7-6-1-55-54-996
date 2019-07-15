@@ -1,6 +1,8 @@
 package com.tws.refactoring;
 
 public class Driver {
+    private static final int LEGAL_DRIVING_AGE = 18;
+
     public int getAge() {
         return age;
     }
@@ -12,6 +14,6 @@ public class Driver {
     private int age;
 
     public boolean isLegalDriver() {
-        return this.age >= 18;
+        return this.age >= LEGAL_DRIVING_AGE;
     }
 }
